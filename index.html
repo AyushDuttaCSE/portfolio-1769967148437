@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignesh S R | Full Stack Java Developer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @layer base {
+            section { @apply py-20 px-6 max-w-7xl mx-auto; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-2xl font-bold text-blue-600">Vignesh.SR</span>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#hero" class="hover:text-blue-600 transition">Home</a>
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6 py-4 space-y-4 flex flex-col">
+            <a href="#hero" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">Home</a>
+            <a href="#about" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">About</a>
+            <a href="#skills" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">Skills</a>
+            <a href="#experience" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">Experience</a>
+            <a href="#contact" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="md:w-1/2 space-y-6">
+            <h2 class="text-blue-600 font-semibold tracking-wide uppercase">Full Stack Java Developer</h2>
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight">Vignesh S R</h1>
+            <p class="text-xl text-slate-600 leading-relaxed">
+                Experienced Software Engineer with over 5.8 years of expertise in building large-scale distributed systems and banking applications across India and the UK.
+            </p>
+            <div class="flex gap-4">
+                <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-200">Get In Touch</a>
+                <a href="#experience" class="border border-slate-300 px-8 py-3 rounded-lg font-semibold hover:bg-slate-100 transition">View Work</a>
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <div class="relative">
+                <div class="absolute -inset-4 bg-blue-100 rounded-full blur-2xl opacity-70"></div>
+                <img src="https://images.unsplash.com/illustrations/a-drawing-of-a-man-wearing-a-tie-7EbR-jFH7cI" alt="Vignesh S R" class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-8 border-white shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white rounded-3xl my-10 shadow-sm border border-slate-100">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h3 class="text-3xl font-bold mb-6">Professional Summary</h3>
+                <p class="text-slate-600 leading-loose mb-6">
+                    Bachelors in Computer Science Engineering with a solid background in data structures, algorithms, and design patterns. I specialize in the end-to-end design and implementation of cloud-native microservices and high-scale distributed systems.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-slate-50 rounded-xl">
+                        <span class="block text-2xl font-bold text-blue-600">5.8+</span>
+                        <span class="text-sm text-slate-500 font-medium">Years Experience</span>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl">
+                        <span class="block text-2xl font-bold text-blue-600">UK/IN</span>
+                        <span class="text-sm text-slate-500 font-medium">International Exposure</span>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                    <div class="bg-blue-100 p-3 rounded-lg text-blue-600"><i class="fas fa-university"></i></div>
+                    <div>
+                        <h4 class="font-bold">Banking Domain Expertise</h4>
+                        <p class="text-slate-500 text-sm">Deep understanding of trade capture, treasury, and fixed income products.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="bg-blue-100 p-3 rounded-lg text-blue-600"><i class="fas fa-cloud"></i></div>
+                    <div>
+                        <h4 class="font-bold">Cloud-Native Architect</h4>
+                        <p class="text-slate-500 text-sm">Experience breaking monoliths into scalable microservices using Spring Boot & Pivotal Cloud.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="bg-blue-100 p-3 rounded-lg text-blue-600"><i class="fas fa-globe"></i></div>
+                    <div>
+                        <h4 class="font-bold">Client Site Experience</h4>
+                        <p class="text-slate-500 text-sm">Successfully deployed large-scale systems on-site in London, UK.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold">Technical Proficiency</h3>
+            <div class="w-16 h-1 bg-blue-600 mx-auto mt-4"></div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 text-center hover:shadow-xl hover:-translate-y-1 transition">
+                <i class="fab fa-java text-4xl text-orange-500 mb-4"></i>
+                <h4 class="font-bold">Java</h4>
+                <p class="text-xs text-slate-400 mt-2">Java 8+, Spring Boot</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 text-center hover:shadow-xl hover:-translate-y-1 transition">
+                <i class="fab fa-angular text-4xl text-red-600 mb-4"></i>
+                <h4 class="font-bold">Angular</h4>
+                <p class="text-xs text-slate-400 mt-2">Frontend Framework</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 text-center hover:shadow-xl hover:-translate-y-1 transition">
+                <i class="fab fa-react text-4xl text-blue-400 mb-4"></i>
+                <h4 class="font-bold">React</h4>
+                <p class="text-xs text-slate-400 mt-2">Dynamic UIs</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 text-center hover:shadow-xl hover:-translate-y-1 transition">
+                <i class="fas fa-cubes text-4xl text-indigo-600 mb-4"></i>
+                <h4 class="font-bold">Microservices</h4>
+                <p class="text-xs text-slate-400 mt-2">Distributed Systems</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-slate-100/50">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold">Work Experience</h3>
+            <div class="w-16 h-1 bg-blue-600 mx-auto mt-4"></div>
+        </div>
+        
+        <div class="space-y-12">
+            <!-- Nielsen -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border-l-8 border-blue-600">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+                    <div>
+                        <h4 class="text-2xl font-bold uppercase tracking-tight">Full Stack Java Developer</h4>
+                        <p class="text-blue-600 font-semibold text-lg">Nielsen</p>
+                    </div>
+                    <span class="text-slate-500 font-medium">2019 — Present</span>
+                </div>
+                <ul class="space-y-3 text-slate-600 list-disc ml-5">
+                    <li>End-to-end design and implementation of Nielsen product modules using Angular and Java.</li>
+                    <li>Contributing to low-level design, decoupling modules, and conducting thorough code reviews.</li>
+                    <li>Building initial Proof of Concepts (POCs) and refactoring core legacy modules for performance.</li>
+                </ul>
+            </div>
+
+            <!-- JPMorgan -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border-l-8 border-slate-300">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+                    <div>
+                        <h4 class="text-2xl font-bold uppercase tracking-tight">Full Stack Java Developer</h4>
+                        <p class="text-blue-600 font-semibold text-lg">JPMorgan Chase & Co.</p>
+                    </div>
+                    <span class="text-slate-500 font-medium">2018 — 2019</span>
+                </div>
+                <div class="mb-4 text-sm font-bold text-slate-400">CIO TREASURY</div>
+                <ul class="space-y-3 text-slate-600 list-disc ml-5">
+                    <li>Solutioned, designed, and implemented a Trade Capture application for CIO Treasury.</li>
+                    <li>Developed a dynamic UI using React from the ground up and built cloud-native microservices with Spring Boot.</li>
+                    <li>Implemented highly scalable Pivotal Cloud Cache (key-value store).</li>
+                    <li>Architected and developed pricing processes for fixed income products and integrated partner APIs.</li>
+                    <li>Transformed monolithic applications into scalable, cloud-compatible microservices.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="bg-blue-600 rounded-3xl p-12 text-white text-center shadow-2xl">
+            <h3 class="text-4xl font-bold mb-8">Ready to collaborate?</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center">
+                    <div class="bg-blue-500 p-4 rounded-full mb-4"><i class="fas fa-envelope text-2xl"></i></div>
+                    <span class="text-sm opacity-80 mb-1">Email</span>
+                    <a href="mailto:srvigneshksr@gmail.com" class="font-bold text-lg hover:underline">srvigneshksr@gmail.com</a>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-blue-500 p-4 rounded-full mb-4"><i class="fas fa-phone text-2xl"></i></div>
+                    <span class="text-sm opacity-80 mb-1">Mobile</span>
+                    <a href="tel:+919003783601" class="font-bold text-lg hover:underline">+91 9003783601</a>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-blue-500 p-4 rounded-full mb-4"><i class="fas fa-location-dot text-2xl"></i></div>
+                    <span class="text-sm opacity-80 mb-1">Location</span>
+                    <span class="font-bold text-lg">Chennai, India</span>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-blue-500 flex justify-center gap-6">
+                <a href="#" class="text-white text-3xl hover:opacity-70 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white text-3xl hover:opacity-70 transition"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-400 text-sm">
+        <p>&copy; 2024 Vignesh S R. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for sticky navbar
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
